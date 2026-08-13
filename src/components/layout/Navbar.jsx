@@ -44,10 +44,10 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 p-3 md:p-4">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 p-2 sm:p-3 md:p-4">
       <div
         className={cn(
-          'pointer-events-auto relative z-50 mx-auto flex max-w-7xl items-center gap-2 rounded-[22px] border px-3 py-2.5 shadow-[var(--shadow)] backdrop-blur-2xl transition-all duration-500 md:gap-3 md:px-4',
+          'pointer-events-auto relative z-50 mx-auto flex max-w-7xl items-center gap-1.5 rounded-2xl border px-2 py-2 shadow-[var(--shadow)] backdrop-blur-2xl transition-all duration-500 sm:gap-2 sm:rounded-[22px] sm:px-3 sm:py-2.5 md:gap-3 md:px-4',
           scrolled || open || !isDarkHero
             ? 'border-[var(--line)] bg-[var(--nav)]'
             : 'border-white/15 bg-black/25',
@@ -58,7 +58,7 @@ export default function Navbar() {
             src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Kased Khair"
             className={cn(
-              'h-8 w-auto max-w-[132px] object-contain md:h-9 md:max-w-[150px]',
+              'h-7 w-auto max-w-[92px] object-contain sm:h-8 sm:max-w-[132px] md:h-9 md:max-w-[150px]',
               lightText ? 'brightness-0 invert' : 'dark:brightness-0 dark:invert',
             )}
           />
@@ -112,7 +112,7 @@ export default function Navbar() {
                   applyDocumentLang('en')
                 }
               }}
-              className={cn('px-2.5 py-1.5', i18n.language !== 'ar' && 'bg-[var(--gold)] text-[#0b1220]')}
+              className={cn('px-1.5 py-1 sm:px-2.5 sm:py-1.5', i18n.language !== 'ar' && 'bg-[var(--gold)] text-[#0b1220]')}
             >
               EN
             </button>
@@ -124,7 +124,7 @@ export default function Navbar() {
                   applyDocumentLang('ar')
                 }
               }}
-              className={cn('px-2.5 py-1.5', i18n.language === 'ar' && 'bg-[var(--gold)] text-[#0b1220]')}
+              className={cn('px-1.5 py-1 sm:px-2.5 sm:py-1.5', i18n.language === 'ar' && 'bg-[var(--gold)] text-[#0b1220]')}
             >
               AR
             </button>
@@ -135,7 +135,7 @@ export default function Navbar() {
             onClick={toggleTheme}
             aria-label="Toggle theme"
             className={cn(
-              'grid h-9 w-9 place-items-center rounded-full border',
+              'grid h-8 w-8 place-items-center rounded-full border sm:h-9 sm:w-9',
               lightText ? 'border-white/25 text-white' : 'border-[var(--line)] text-[var(--text)]',
             )}
           >
@@ -153,7 +153,7 @@ export default function Navbar() {
           <button
             type="button"
             className={cn(
-              'grid h-9 w-9 place-items-center rounded-full border xl:hidden',
+              'grid h-8 w-8 place-items-center rounded-full border xl:hidden sm:h-9 sm:w-9',
               lightText ? 'border-white/25 text-white' : 'border-[var(--line)] text-[var(--text)]',
             )}
             onClick={() => setOpen((v) => !v)}
@@ -172,9 +172,9 @@ export default function Navbar() {
             exit={{ opacity: 0 }}
             className="pointer-events-auto fixed inset-0 z-40 bg-[#07090d]/96 backdrop-blur-xl xl:hidden"
           >
-            <div className="flex h-full flex-col px-6 pb-10 pt-24 md:px-12">
+            <div className="flex h-full flex-col overflow-y-auto px-5 pb-8 pt-20 sm:px-6 md:px-12">
               <p className="text-[11px] tracking-[0.35em] text-[var(--gold)] uppercase">{t('brand.tagline')}</p>
-              <div className="mt-8 flex flex-col">
+              <div className="mt-6 flex flex-col">
                 {links.map((l, i) => (
                   <motion.div
                     key={l.to}
@@ -188,13 +188,13 @@ export default function Navbar() {
                       onClick={() => setOpen(false)}
                       className={({ isActive }) =>
                         cn(
-                          'flex items-baseline gap-4 border-b border-white/10 py-4',
+                          'flex items-baseline gap-3 border-b border-white/10 py-3 sm:gap-4 sm:py-4',
                           isActive ? 'text-[var(--gold)]' : 'text-white',
                         )
                       }
                     >
                       <span className="font-display text-sm text-[var(--gold)]">{l.n}</span>
-                      <span className="font-display text-4xl md:text-6xl">{t(`nav.${l.key}`)}</span>
+                      <span className="font-display text-2xl sm:text-4xl md:text-6xl">{t(`nav.${l.key}`)}</span>
                     </NavLink>
                   </motion.div>
                 ))}

@@ -20,7 +20,7 @@ export default function HeroSlider() {
   const slide = list[index] || {}
 
   return (
-    <section className="relative h-[100svh] min-h-[620px] overflow-hidden">
+    <section className="relative h-[88svh] min-h-[520px] overflow-hidden md:h-[100svh] md:min-h-[620px]">
       <Swiper
         key={lang}
         modules={[Autoplay, EffectFade]}
@@ -38,7 +38,7 @@ export default function HeroSlider() {
       >
         {list.map((_, i) => (
           <SwiperSlide key={i}>
-            <div className="relative h-[100svh] min-h-[620px] overflow-hidden">
+            <div className="relative h-[88svh] min-h-[520px] overflow-hidden md:h-[100svh] md:min-h-[620px]">
               <img src={heroImages[i]} alt="" className="hero-ken absolute inset-0 h-full w-full object-cover" />
             </div>
           </SwiperSlide>
@@ -47,7 +47,7 @@ export default function HeroSlider() {
 
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/20" />
 
-      <div className="absolute inset-0 z-10 flex flex-col justify-end px-6 pb-24 md:px-10 md:pb-28">
+      <div className="absolute inset-0 z-10 flex flex-col justify-end px-4 pb-20 sm:px-6 md:px-10 md:pb-28">
         <div className="wrap !m-0 w-full max-w-7xl">
           <AnimatePresence mode="wait">
             <motion.div
@@ -59,11 +59,11 @@ export default function HeroSlider() {
               className="max-w-3xl"
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--gold-2)]">{slide.kicker}</p>
-              <h1 className="font-display mt-4 text-4xl leading-[1.08] text-white md:text-6xl lg:text-7xl">{slide.title}</h1>
-              <p className="mt-5 max-w-xl text-base text-white/80 md:text-lg">{slide.subtitle}</p>
+              <h1 className="font-display mt-3 text-[1.85rem] leading-[1.1] text-white sm:mt-4 sm:text-4xl md:text-6xl lg:text-7xl">{slide.title}</h1>
+              <p className="mt-3 max-w-xl text-sm text-white/80 sm:mt-5 sm:text-base md:text-lg">{slide.subtitle}</p>
             </motion.div>
           </AnimatePresence>
-          <div className="pointer-events-auto mt-8 flex flex-wrap gap-3">
+          <div className="pointer-events-auto mt-5 flex flex-wrap gap-2 sm:mt-8 sm:gap-3">
             <Button to="/projects">{t('hero.cta')}</Button>
             <Button to="/contact" variant="ghost" className="border-white/30 text-white hover:text-[var(--gold)]">
               {t('hero.cta2')}

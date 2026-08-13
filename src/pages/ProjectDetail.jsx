@@ -24,11 +24,11 @@ export default function ProjectDetail() {
 
   return (
     <div>
-      <section className="pt-32 md:pt-36">
-        <div className="wrap pb-8">
+      <section className="pt-28 md:pt-36">
+        <div className="wrap pb-6 md:pb-8">
           <Reveal>
             <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--gold)]">{project.place[lang]}</p>
-            <h1 className="font-display mt-4 max-w-4xl text-4xl leading-[1.08] md:text-6xl">{project.title[lang]}</h1>
+            <h1 className="font-display mt-3 max-w-4xl text-[1.85rem] leading-[1.12] md:mt-4 md:text-6xl">{project.title[lang]}</h1>
           </Reveal>
         </div>
         <ExpandMedia src={project.image} alt={project.title[lang]} />

@@ -57,11 +57,11 @@ export function Reveal({ children, className, delay = 0 }) {
 export function PageHero({ kicker, title, lead, image }) {
   return (
     <section>
-      <div className="wrap pt-32 pb-8 md:pt-36">
+      <div className="wrap pt-28 pb-6 md:pt-36 md:pb-8">
         <Reveal>
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--gold)]">{kicker}</p>
-          <h1 className="font-display mt-4 max-w-4xl text-4xl leading-[1.08] md:text-6xl">{title}</h1>
-          {lead && <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--muted)] md:text-lg">{lead}</p>}
+          <h1 className="font-display mt-3 max-w-4xl text-[1.85rem] leading-[1.12] md:mt-4 md:text-6xl">{title}</h1>
+          {lead && <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--muted)] md:mt-6 md:text-lg">{lead}</p>}
         </Reveal>
       </div>
       {image && <ExpandMedia src={image} />}
@@ -76,7 +76,7 @@ export function PhotoCard({ to, href, image, kicker, title, className }) {
       {kicker && (
         <p className="mt-4 text-[11px] uppercase tracking-[0.2em] text-[var(--gold)]">{kicker}</p>
       )}
-      <h3 className="font-display mt-1 text-2xl transition-colors group-hover:text-[var(--gold)] md:text-[1.7rem]">
+      <h3 className="font-display mt-1 text-xl transition-colors group-hover:text-[var(--gold)] md:text-[1.7rem]">
         {title}
       </h3>
     </>

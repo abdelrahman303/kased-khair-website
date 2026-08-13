@@ -46,8 +46,14 @@ html {
 }
 
 .wrap {
-  width: min(1120px, calc(100% - 2.5rem));
+  width: min(1120px, calc(100% - 1.5rem));
   margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    width: min(1120px, calc(100% - 2.5rem));
+  }
 }
 
 html[lang="ar"] body,

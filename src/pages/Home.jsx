@@ -28,25 +28,25 @@ export default function Home() {
     <div>
       <HeroSlider />
 
-      <section className="wrap py-20 md:py-28">
+      <section className="wrap py-10 md:py-28">
         <Reveal>
-          <div className="grid gap-8 border-y border-[var(--line)] py-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-5 border-y border-[var(--line)] py-6 sm:gap-8 sm:py-10 lg:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label}>
-                <p className="font-display text-5xl md:text-6xl">{s.value}</p>
-                <p className="mt-2 text-sm text-[var(--muted)]">{s.label}</p>
+                <p className="font-display text-[1.85rem] leading-none sm:text-5xl md:text-6xl">{s.value}</p>
+                <p className="mt-1.5 text-[11px] text-[var(--muted)] sm:mt-2 sm:text-sm">{s.label}</p>
               </div>
             ))}
           </div>
         </Reveal>
       </section>
 
-      <section className="wrap pb-20 md:pb-28">
+      <section className="wrap pb-14 md:pb-28">
         <Reveal>
           <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--gold)]">{t('sectors.kicker')}</p>
-          <h2 className="font-display mt-3 max-w-3xl text-4xl md:text-5xl">{t('sectors.title')}</h2>
+          <h2 className="font-display mt-3 max-w-3xl text-[1.75rem] leading-tight md:text-5xl">{t('sectors.title')}</h2>
         </Reveal>
-        <div className="mt-12 grid gap-10 sm:grid-cols-2">
+        <div className="mt-8 grid gap-8 sm:mt-12 sm:grid-cols-2 sm:gap-10">
           {sectorKeys.map((key, i) => (
             <Reveal key={key} delay={i * 0.06}>
               <PhotoCard
@@ -61,17 +61,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="wrap pb-20 md:pb-28">
-        <Reveal className="flex flex-wrap items-end justify-between gap-6">
+      <section className="wrap pb-14 md:pb-28">
+        <Reveal className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--gold)]">{t('homeProjects.kicker')}</p>
-            <h2 className="font-display mt-3 text-4xl md:text-5xl">{t('homeProjects.title')}</h2>
+            <h2 className="font-display mt-3 text-[1.75rem] leading-tight md:text-5xl">{t('homeProjects.title')}</h2>
           </div>
           <Button to="/projects" variant="ghost">
             {t('homeProjects.all')}
           </Button>
         </Reveal>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
           {featured.slice(0, 6).map((p, i) => (
             <Reveal key={p.slug} delay={i * 0.05}>
               <PhotoCard to={`/projects/${p.slug}`} image={p.image} kicker={p.place[lang]} title={p.title[lang]} />
@@ -80,15 +80,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="wrap pb-20 md:pb-28">
+      <section className="wrap pb-14 md:pb-28">
         <Reveal>
           <p className="text-[11px] uppercase tracking-[0.32em] text-[var(--gold)]">{t('partners.kicker')}</p>
-          <h2 className="font-display mt-3 max-w-2xl text-4xl md:text-5xl">{t('partners.title')}</h2>
-          <p className="mt-4 max-w-2xl text-[var(--muted)]">{t('partners.lead')}</p>
+          <h2 className="font-display mt-3 max-w-2xl text-[1.75rem] leading-tight md:text-5xl">{t('partners.title')}</h2>
+          <p className="mt-3 max-w-2xl text-sm text-[var(--muted)] md:mt-4 md:text-base">{t('partners.lead')}</p>
         </Reveal>
-        <div className="mt-10 grid gap-px overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2">
+        <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:mt-10 sm:grid-cols-2 sm:rounded-3xl">
           {partners.map((p, i) => (
-            <Reveal key={p.en} delay={i * 0.03} className="bg-[var(--surface)] px-6 py-5">
+            <Reveal key={p.en} delay={i * 0.03} className="bg-[var(--surface)] px-4 py-3.5 sm:px-6 sm:py-5">
               <p className="font-medium">{p[lang]}</p>
             </Reveal>
           ))}
@@ -97,8 +97,8 @@ export default function Home() {
 
       <ExpandMedia src={projects.find((p) => p.slug === 'submarines-hanger').image}>
         <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 flex flex-col items-start justify-end p-8 md:p-16">
-          <h2 className="font-display max-w-2xl text-3xl text-white md:text-5xl">{t('cta.title')}</h2>
+        <div className="absolute inset-0 flex flex-col items-start justify-end p-5 md:p-16">
+          <h2 className="font-display max-w-2xl text-2xl text-white md:text-5xl">{t('cta.title')}</h2>
           <p className="mt-4 max-w-lg text-white/80">{t('cta.text')}</p>
           <div className="mt-7">
             <Button to="/contact">{t('cta.button')}</Button>

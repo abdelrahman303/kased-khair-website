@@ -18,8 +18,8 @@ export default function ExpandMedia({ src, alt = '', children }) {
       if (!sectionEl || !frameEl) return undefined
 
       const startSize = () => ({
-        width: Math.min(1120, Math.max(sectionEl.clientWidth - 40, 280)),
-        height: Math.min(window.innerHeight * 0.56, 640),
+        width: Math.min(1120, Math.max(sectionEl.clientWidth - (window.innerWidth < 640 ? 24 : 40), 240)),
+        height: Math.min(window.innerHeight * (window.innerWidth < 640 ? 0.38 : 0.56), 640),
       })
 
       const from = startSize()
@@ -60,7 +60,7 @@ export default function ExpandMedia({ src, alt = '', children }) {
   )
 
   return (
-    <section ref={section} className="relative h-[170vh] md:h-[185vh]">
+    <section ref={section} className="relative h-[130vh] md:h-[185vh]">
       <div className="sticky top-0 flex h-svh w-full items-center justify-center overflow-hidden">
         <div ref={frame} className="relative overflow-hidden bg-[var(--bg-2)] will-change-[width,height,border-radius]">
           <img ref={img} src={src} alt={alt} className="h-full w-full origin-center object-cover" />

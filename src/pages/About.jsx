@@ -23,7 +23,7 @@ export default function About() {
 
       <section className="wrap py-16 md:py-24">
         <Reveal>
-          <p className="max-w-3xl text-xl leading-relaxed md:text-2xl">{t('about.intro')}</p>
+          <p className="max-w-3xl text-lg leading-relaxed md:text-2xl">{t('about.intro')}</p>
         </Reveal>
       </section>
 
