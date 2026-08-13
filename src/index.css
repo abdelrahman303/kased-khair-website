@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Manrope", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Cairo", serif;
+  --font-arabic: "Cairo", sans-serif;
+  --color-gold: #c4a35a;
+  --color-gold-soft: #e8d5a3;
+  --color-ink: #0b1220;
+}
+
+:root {
+  --bg: #f4f0e8;
+  --bg-2: #ebe5d8;
+  --surface: #fffcf7;
+  --surface-2: #f7f2e8;
+  --text: #0b1220;
+  --muted: #5c6573;
+  --line: rgba(11, 18, 32, 0.1);
+  --gold: #9a7840;
+  --gold-2: #c4a35a;
+  --overlay: rgba(11, 18, 32, 0.55);
+  --nav: rgba(244, 240, 232, 0.78);
+  --shadow: 0 30px 80px rgba(11, 18, 32, 0.12);
+}
+
+.dark {
+  --bg: #07090d;
+  --bg-2: #0d1218;
+  --surface: #111821;
+  --surface-2: #171f2a;
+  --text: #f3eee4;
+  --muted: #9aa3ad;
+  --line: rgba(243, 238, 228, 0.1);
+  --gold: #d4b36a;
+  --gold-2: #e8d5a3;
+  --overlay: rgba(4, 7, 12, 0.62);
+  --nav: rgba(7, 9, 13, 0.72);
+  --shadow: 0 40px 100px rgba(0, 0, 0, 0.45);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+.wrap {
+  width: min(1120px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+html[lang="ar"] body,
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+html[lang="ar"] .font-display {
+  font-family: var(--font-arabic);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--gold);
+  color: #0b1220;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.35 !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--gold) !important;
+  opacity: 1 !important;
+  width: 28px !important;
+  border-radius: 99px !important;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes ken {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-ken {
+  animation: ken 16s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+select {
+  color: var(--text);
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-33.333%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+html[dir="rtl"] .animate-marquee {
+  animation-direction: reverse;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.x-scroll {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-inline: 1.5rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.x-card {
+  scroll-snap-align: start;
+  flex: 0 0 82vw;
+}
+
+@media (min-width: 768px) {
+  .x-card {
+    flex-basis: 42vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .x-card {
+    flex-basis: 28vw;
+  }
+}
+
+.img-blob {
+  border-radius: 48% 52% 42% 58% / 42% 38% 62% 58%;
+}
+
+.outline-type {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--gold);
+}
+
+.diag-cut {
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+}
+
+.h-card {
+  flex: 0 0 78vw;
+}
+
+@media (min-width: 900px) {
+  .h-card {
+    flex-basis: 34vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .h-card {
+    flex-basis: 26vw;
+  }
+}

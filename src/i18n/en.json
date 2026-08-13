@@ -1,0 +1,233 @@
+{
+  "brand": {
+    "name": "Kased Khair",
+    "tagline": "General Supplies & Contracting"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "equipment": "Equipment",
+    "awards": "Awards",
+    "profile": "Company Profile",
+    "contact": "Contact",
+    "whoWeAre": "Who We Are",
+    "history": "Our History"
+  },
+  "hero": {
+    "slides": [
+      {
+        "kicker": "Since 1991",
+        "title": "Thirty years of excellence.",
+        "subtitle": "Every project is a milestone for a better future."
+      },
+      {
+        "kicker": "Marine & Civil",
+        "title": "Building with confidence.",
+        "subtitle": "A leader in infrastructural development across Egypt and the Gulf."
+      },
+      {
+        "kicker": "Global standards",
+        "title": "Crafted for the long term.",
+        "subtitle": "ISO-certified delivery on the region’s most complex facilities."
+      }
+    ],
+    "cta": "Explore projects",
+    "cta2": "Talk to our team",
+    "scroll": "Scroll"
+  },
+  "stats": {
+    "founded": "Founded",
+    "years": "Years of excellence",
+    "iso": "ISO certifications",
+    "offices": "Regional offices"
+  },
+  "sectors": {
+    "kicker": "Capabilities",
+    "title": "Four disciplines. One standard.",
+    "subtitle": "Integrated buildings, marine works, roads, and steel — delivered with the same precision.",
+    "items": {
+      "buildings": {
+        "title": "Integrated Buildings",
+        "line": "Constructions that last",
+        "text": "Hospitals, naval bases, universities, malls, and civic landmarks — designed and built to endure."
+      },
+      "marine": {
+        "title": "Marine Projects",
+        "line": "Powered by the latest fleet",
+        "text": "Quays, jetties, breakwaters, shore protection, and dredging for strategic maritime infrastructure."
+      },
+      "roads": {
+        "title": "Road Projects",
+        "line": "Paving the way to new places",
+        "text": "Infrastructure networks that connect facilities, cities, and coastal developments."
+      },
+      "steel": {
+        "title": "Steel Projects",
+        "line": "State of the art constructions",
+        "text": "Large-span hangars, covered halls, and specialist steel structures executed to international codes."
+      }
+    }
+  },
+  "homeAbout": {
+    "kicker": "The company",
+    "title": "Global standards.\nGlobal reach.",
+    "lead": "Kased Khair holds the know-how for marine and civil engineering across sectors — delivering excellence and differentiation on every assignment.",
+    "body": "We supply machinery, civil construction, marine works, and industrial services. From prefabricated and prestressed concrete to hospitals, commercial centres, bridges, and naval facilities, we operate at the scale of the region’s most demanding clients.",
+    "visionTitle": "Vision",
+    "vision": "Client focus, driven by innovation, technology, and people’s development — the company of choice for every stakeholder we serve.",
+    "missionTitle": "Mission",
+    "mission": "Long-lasting relationships through construction quality, on-time delivery, integrity, and customer satisfaction in Egypt and Saudi Arabia.",
+    "cta": "Our story"
+  },
+  "homeProjects": {
+    "kicker": "Selected work",
+    "title": "Landmarks across Egypt’s coasts and cities.",
+    "all": "View all projects"
+  },
+  "partners": {
+    "kicker": "Trust",
+    "title": "Partners of success",
+    "subtitle": "Egypt’s biggest entities rely on us.",
+    "lead": "We take pride in being among the distinguished companies in Egypt with the qualifications and experience to follow international specifications, execute billion-pound projects, and serve esteemed clients.",
+    "cta": "More about us"
+  },
+  "cta": {
+    "title": "Looking for a quality contractor for your next project?",
+    "text": "Our technical team is ready to discuss scope, programme, and delivery.",
+    "button": "Contact our technical team"
+  },
+  "about": {
+    "heroKicker": "About us",
+    "heroTitle": "Who we are",
+    "heroLead": "A trusted partner and premier provider of high-quality works across the Middle East and the Gulf.",
+    "intro": "Kased Khair is planning to become a leader — a trusted partner and a premier provider of high-quality works — by delivering every project to the highest standards through hard work, ethical practices, and top-quality performance throughout the Middle East and Gulf area.",
+    "aboutTitle": "About Kased Khair",
+    "aboutText": "Kased Khair is one of the leading companies providing machinery supply, civil construction, marine works, and industrial services across all sectors. We are involved in most of the region’s biggest and most complex projects and facilities, reflecting our position as a leader in our chosen markets.",
+    "visionTitle": "Our vision",
+    "visionText": "Our motto is based on client focus driven by innovation, technology, and people’s development. This enables us to be the company of choice for all stakeholders in the dynamic and demanding sectors we serve. We seek excellence and differentiation in civil and marine construction, maintaining leadership in construction and facilities management.",
+    "missionTitle": "Our mission",
+    "missionText": "Kased Khair is a well-known company in Egypt and Saudi Arabia in supplying, infrastructure, civil construction, and marine projects. We are committed to building long-lasting relationships with our clients and community by providing a high standard of construction quality and on-time delivery, while ensuring our integrity, performance, and customer satisfaction.",
+    "historyTitle": "Company history",
+    "historyP1": "Kased Khair for General Supplies and Contracting goes back to the early nineties — exactly 1991 — when Mr. Saeed Gamal started the company in Egypt to provide civil and marine construction services.",
+    "historyP2": "With technical expertise and excellence of construction quality, the company developed into a centre of construction, operation, and maintenance for prestigious and complex projects of advanced technology throughout Egypt.",
+    "historyP3": "Under sound management, a team of dedicated professionals, and a record of quality and reliability, operations expanded to Saudi Arabia and subsequently to other Gulf countries, North Africa, and the Mediterranean.",
+    "historyP4": "After many successful projects at home and abroad, Kased Khair has grown into an ISO-certified multi-divisional organisation with subsidiaries and affiliates in Egypt and the Gulf Area.",
+    "assetsTitle": "Our greatest assets",
+    "assetsText": "Kased Khair’s staff of experts and professionals provide and execute the best solutions for every project. Under the leadership of CEO Mr. Saeed Gamal and our managers, exceptionally qualified engineers and highly trained technicians — together with employees in all related fields — make Kased Khair an award-winning company, executing every project efficiently to international standards."
+  },
+  "projectsPage": {
+    "heroKicker": "Portfolio",
+    "heroTitle": "Thirty years of experience",
+    "heroLead": "A story of success and achievement across marine, civil, and industrial works.",
+    "intro": "Founded by Mr. Saeed Gamal to provide civil and marine construction services, Kased Khair grew over the years into a multinational organisation. Over three decades of passionate work, we cultivated a reputation as the contractor for general supplies, industrial projects, integrated projects, marine projects, dredging, roads, steel structures, and specialised electromechanical works.",
+    "filterAll": "All projects",
+    "filterBuildings": "Integrated buildings",
+    "filterMarine": "Marine",
+    "filterSteel": "Steel",
+    "filterRoads": "Roads",
+    "emptyRoads": "Road projects are part of our capability set. Featured work currently lives under buildings, marine, and steel.",
+    "view": "View project"
+  },
+  "project": {
+    "description": "Project description",
+    "place": "Location",
+    "owner": "Client",
+    "category": "Sector",
+    "related": "Related projects",
+    "back": "Back to projects"
+  },
+  "awards": {
+    "heroKicker": "Recognition",
+    "heroTitle": "Certifications & awards",
+    "heroLead": "First-class credentials, ISO systems, and certificates of appreciation from Egypt’s leading authorities.",
+    "membershipsTitle": "Memberships",
+    "membershipsKicker": "Our memberships and honours",
+    "membershipsText": "Egyptian Federation for Construction and Building Contractors — first-class company in marine projects, integrated buildings projects, and electromechanical projects.",
+    "awardsTitle": "Awards",
+    "awardsKicker": "Certificates of appreciation",
+    "awardsText": "We are privileged and greatly honoured to receive these certificates of appreciation for our work on these projects.",
+    "isoTitle": "ISO certifications",
+    "isoText": "In a quality-driven world, we pride ourselves on being among the first companies in our market certified to rigorous ISO standards. Together they form a stringent system achieved only by an organisation of our capability, knowledge, commitment, and expertise.",
+    "completionTitle": "Project completion certifications",
+    "completionText": "We are proud to gain our clients’ confidence and surpass their expectations with every project — executed with accuracy, proficiency, and perfection."
+  },
+  "equipment": {
+    "heroKicker": "Plant & fleet",
+    "heroTitle": "Powered by the latest fleet",
+    "heroLead": "Marine plant, heavy civil machinery, and specialist steel capability behind every landmark we deliver.",
+    "intro": "Kased Khair executes marine and civil works at national scale. Our plant and fleet support quays, dredging, shore protection, integrated buildings, and large-span steel structures — so programme, quality, and safety stay under our own control.",
+    "items": {
+      "marine": {
+        "title": "Marine fleet",
+        "text": "Plant for quay construction, jetties, breakwaters, and dredging — including marine equipment used on shore-protection and naval-base assignments."
+      },
+      "civil": {
+        "title": "Heavy civil plant",
+        "text": "Machinery for diaphragm walls, CFA piles, compound steel-pipe and sheet-pile berths, and large-scale building complexes."
+      },
+      "dredging": {
+        "title": "Dredging capability",
+        "text": "Proven delivery on major dredging programmes, including channel clearance of tens of millions of cubic metres."
+      },
+      "steel": {
+        "title": "Steel fabrication",
+        "text": "Large-span hangars and covered halls — including structures exceeding 8,000 m² with spans up to 110 metres."
+      }
+    }
+  },
+  "profile": {
+    "heroKicker": "Credentials",
+    "heroTitle": "Company profile",
+    "heroLead": "A concise view of who we are, where we work, and how we deliver.",
+    "download": "Download profile",
+    "snapshot": "At a glance",
+    "note": "For the full illustrated brochure, contact our commercial team or use the download when available."
+  },
+  "contact": {
+    "heroKicker": "Get in touch",
+    "heroTitle": "We are always open to your feedback.",
+    "heroLead": "If you are interested in our services, email us or call — we would be glad to discuss your next project.",
+    "formTitle": "Send a message",
+    "formHint": "Messages are delivered to {{email}}.",
+    "name": "Your name",
+    "email": "Your email",
+    "subject": "Subject",
+    "message": "Your message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Thank you. Your message has been sent to sales@kasedkhair.com.",
+    "error": "Something went wrong. Please email us directly.",
+    "hq": "Headquarters",
+    "map": "Locations",
+    "openMap": "Open in Maps",
+    "mailSubject": "Inquiry — {{office}}",
+    "mailBody": "Hello Kased Khair team,\n\nI would like to get in touch regarding your services at {{office}} ({{city}}).\n\nPlease contact me at your earliest convenience.\n\nThank you.",
+    "socials": "Follow us",
+    "subjects": {
+      "placeholder": "Select a subject",
+      "newProject": "New project inquiry",
+      "marine": "Marine / dredging works",
+      "buildings": "Integrated buildings",
+      "steel": "Steel structures",
+      "roads": "Roads & infrastructure",
+      "equipment": "Equipment & fleet",
+      "partnership": "Partnership / tender",
+      "profile": "Request company profile",
+      "other": "Other"
+    }
+  },
+  "footer": {
+    "blurb": "For over three decades, Kased Khair has been among the leading marine and general contractors in the Gulf, North Africa, and the Mediterranean.",
+    "commitment": "We are committed to flawless execution and delivery, and we take pride in helping our clients thrive.",
+    "rights": "All rights reserved.",
+    "locations": "Locations",
+    "explore": "Explore",
+    "socials": "Follow us"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This route does not exist. Return home or browse our projects.",
+    "home": "Back home"
+  }
+}
