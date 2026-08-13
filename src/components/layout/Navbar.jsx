@@ -55,7 +55,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex shrink-0 items-center rounded-2xl px-1">
           <img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Kased Khair"
             className={cn(
               'h-8 w-auto max-w-[132px] object-contain md:h-9 md:max-w-[150px]',

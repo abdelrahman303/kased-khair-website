@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="border-t border-[var(--line)] bg-[var(--bg-2)]">
       <div className="wrap grid gap-12 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <img src="/logo.png" alt="Kased Khair" className="h-10 w-auto dark:brightness-0 dark:invert" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Kased Khair" className="h-10 w-auto dark:brightness-0 dark:invert" />
           <p className="mt-6 max-w-md text-sm leading-relaxed text-[var(--muted)]">{t('footer.blurb')}</p>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-[var(--muted)]">{t('footer.commitment')}</p>
           <div className="mt-6 flex gap-3">
